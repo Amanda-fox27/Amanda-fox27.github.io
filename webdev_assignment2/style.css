@@ -1,0 +1,290 @@
+@font-face {
+    font-family: "Hangaboly";
+    src: url("https://file.garden/aVnFHlp1jC7L4Bpv/fonts/Hangyaboly.ttf");
+}
+
+@font-face {
+    font-family: "Yeseva";
+    src: url("https://file.garden/aVnFHlp1jC7L4Bpv/fonts/YesevaOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Biski";
+    src: url("https://file.garden/aVnFHlp1jC7L4Bpv/fonts/Bobogo.otf");
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #F2E0D5;
+    --secondary: #BF3459;
+    --tertiary: #401328;
+}
+
+.light {
+    background-color: var(--primary);
+
+    h2 {
+        color: var(--tertiary);
+    }
+}
+
+.dark {
+    background-color: var(--tertiary);
+
+    h2 {
+        color: var(--primary);
+    }
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-family: "Biski";
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-family: "Biski";
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 clamp(16px, 4vw, 64px);
+}
+
+.header-img {
+    position: relative;
+}
+
+.header-txt {
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    top: 20%;
+    right: 30px;
+
+    color: var(--primary);
+
+    h3 {
+        font-size: 2.5rem;
+        overflow-wrap: break-word;
+    }
+}
+
+.logo {
+        font-size: 1.5rem;
+        font-family: "Hangaboly";
+    }
+
+.header-txt2 {
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    left: 30px;
+
+    color: var(--primary);
+    font-size: 2.5rem;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 30px 0px;
+}
+
+.nav-decor {
+        background-color: var(--secondary);
+    color: var(--primary);
+    a { color: var(--primary); text-decoration: none;}
+}
+
+.cart {
+    width: 50px;
+    height: auto;
+}
+
+.product {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.product img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.feedback {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 50px;
+}
+
+.paperplane {
+    width: 150px;
+    height: auto;
+    transform: rotate(20deg);
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    background-color: var(--primary);
+
+    ul {
+        padding: 0px;
+    }
+
+    li {
+        list-style-type: none;
+        color: var(--secondary);
+        font-family: "Biski";
+        margin: 15px 0px;
+    }
+
+    h1 {
+        color: var(--secondary);
+    }
+
+    label {
+        display: block;
+    }
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2vw;
+
+    background-color: var(--primary);
+}
+
+.shop-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: 20px;
+
+    img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    }
+}
+
+.shop-filters {
+    background-color: var(--tertiary);
+    color: var(--primary);
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    margin: 0vw 1vw;
+    font-size: 1.2rem;
+}
+
+.footer-img {
+    position: relative;
+}
+
+.footer-txt {
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+    width: 100%;
+
+    color: var(--primary);
+    font-size: 3rem;
+}
+
+
+body {
+    background-color: var(--tertiary);
+}
+
+section {
+    padding: 10px 0px;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Yeseva";
+    font-size:2.5rem;
+}
+
+h3 {
+    font-family: "Yeseva";
+}
+
+p { 
+    color: var(--secondary);
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: "Biski";
+}
+
+li {
+    font-size: 1.7rem;
+}
+
+a {
+    font-family: "Biski";
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    padding: 8px 20px;
+    border-radius: 16px;
+    border: none;
+
+    transform: scale(1);
+    transition: transform 0.2s ease-out;
+}
+
+button:hover {
+    transform: scale(1.1)
+}
+
+price {
+    color: var(--secondary);
+    font-family: "Biski";
+    font-size: 1rem;
+    display: block;
+}
+
+s {
+    color: var(--tertiary);
+}
+
+form {
+    width: 2%;
+}
